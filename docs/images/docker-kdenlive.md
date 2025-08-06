@@ -501,6 +501,7 @@ To help with development, we generate this dependency graph.
 
 ## Versions
 
+* **06.08.25:** - Fix cpu bug, disable gamepad by default.
 * **12.07.25:** - Rebase to Selkies and use official AppImage, HTTPS IS NOW REQUIRED. Remove arm64 support.
 * **19.08.24:** - Rebase to noble. Use pypi and lsio wheels.
 * **10.02.24:** - Update Readme with new env vars and ingest proper PWA icon.
