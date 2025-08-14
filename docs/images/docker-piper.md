@@ -72,6 +72,7 @@ services:
       - PIPER_NOISEW=0.333 #optional
       - PIPER_SPEAKER=0 #optional
       - PIPER_PROCS=1 #optional
+      - STREAMING= #optional
     volumes:
       - /path/to/piper/data:/config
     ports:
@@ -93,6 +94,7 @@ docker run -d \
   -e PIPER_NOISEW=0.333 `#optional` \
   -e PIPER_SPEAKER=0 `#optional` \
   -e PIPER_PROCS=1 `#optional` \
+  -e STREAMING= `#optional` \
   -p 10200:10200 \
   -v /path/to/piper/data:/config \
   --restart unless-stopped \
@@ -122,6 +124,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `PIPER_NOISEW=0.333` | Controls the variability of speaking cadence. Values above 1 produce extreme stutters and pauses. |
 | `PIPER_SPEAKER=0` | Speaker number to use if the voice supports multiple speakers. |
 | `PIPER_PROCS=1` | Number of Piper processes to run simultaneously. |
+| `STREAMING=` | Setting to `true`, or any other value, will enable support for streaming audio on sentence boundaries. |
 
 ### Volume Mappings (`-v`)
 
@@ -344,5 +347,6 @@ To help with development, we generate this dependency graph.
 
 ## Versions
 
+* **10.08.25:** - Add streaming support.
 * **18.07.24:** - Rebase to Ubuntu Noble.
 * **25.11.23:** - Initial Release.
