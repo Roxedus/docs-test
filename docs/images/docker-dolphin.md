@@ -490,11 +490,12 @@ To help with development, we generate this dependency graph.
       svc-xorg -> legacy-services
     }
     Base Images: {
-      "baseimage-selkies:debianbookworm" <- "baseimage-debian:bookworm"
+      "baseimage-selkies:debiantrixie" <- "baseimage-debian:trixie"
     }
     "dolphin:latest" <- Base Images
     ```
 
 ## Versions
 
+* **15.08.25:** - Rebase to Debian Trixie for updated Dolphin, update controller mapping.
 * **18.06.25:** - Initial Version.
