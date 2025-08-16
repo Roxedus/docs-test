@@ -494,6 +494,7 @@ To help with development, we generate this dependency graph.
 
 ## Versions
 
+* **14.08.25:** - Ingest from PPA.
 * **11.08.25:** - Install librsvg2 for icons.
 * **12.07.25:** - Rebase to Selkies, HTTPS IS NOW REQUIRED.
 * **28.08.24:** - Rebase to noble.
