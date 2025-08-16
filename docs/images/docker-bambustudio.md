@@ -475,6 +475,7 @@ To help with development, we generate this dependency graph.
       svc-dbus -> legacy-services
       init-services -> svc-de
       svc-nginx -> svc-de
+      svc-selkies -> svc-de
       svc-xorg -> svc-de
       svc-de -> legacy-services
       init-services -> svc-docker
@@ -484,7 +485,6 @@ To help with development, we generate this dependency graph.
       init-services -> svc-pulseaudio
       svc-pulseaudio -> legacy-services
       init-services -> svc-selkies
-      svc-dbus -> svc-selkies
       svc-nginx -> svc-selkies
       svc-pulseaudio -> svc-selkies
       svc-xorg -> svc-selkies
@@ -493,13 +493,14 @@ To help with development, we generate this dependency graph.
       svc-xorg -> legacy-services
     }
     Base Images: {
-      "baseimage-selkies:debianbookworm" <- "baseimage-debian:bookworm"
+      "baseimage-selkies:ubuntunoble" <- "baseimage-ubuntu:noble"
     }
     "bambustudio:latest" <- Base Images
     ```
 
 ## Versions
 
+* **14.08.25:** - Rebase to Ubuntu Noble to ingest approved appimage.
 * **12.07.25:** - Rebase to Selkies, HTTPS IS NOW REQUIRED.
 * **29.07.24:** - Add required fonts and environment variable for dark mode.
 * **10.02.24:** - Update Readme with new env vars.
