@@ -512,6 +512,7 @@ To help with development, we generate this dependency graph.
 
 ## Versions
 
+* **16.08.25:** - Add proper cleanup logic for builds.
 * **01.07.25:** - Add Kasm branch.
 * **23.06.25:** - Rebase to Selkies, HTTPS is now required.
 * **25.09.24:** - Rebase to Ubuntu Noble.
