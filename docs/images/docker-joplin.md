@@ -215,6 +215,7 @@ services:
     ports:
       - 3000:3000
       - 3001:3001
+    shm_size: "1gb"
     restart: unless-stopped
 ```
 
@@ -230,6 +231,7 @@ docker run -d \
   -p 3000:3000 \
   -p 3001:3001 \
   -v /path/to/config:/config \
+  --shm-size="1gb" \
   --restart unless-stopped \
   lscr.io/linuxserver/joplin:latest
 ```
@@ -263,6 +265,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 
 | Parameter | Function |
 | :-----:   | --- |
+| `--shm-size=` | This is needed for electron applications to function properly. |
 | `--security-opt seccomp=unconfined` | For Docker Engine only, many modern gui apps need this to function on older hosts as syscalls are unknown to Docker. |
 
 ## Environment variables from files (Docker secrets)
