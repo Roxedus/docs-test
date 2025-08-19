@@ -491,16 +491,21 @@ To help with development, we generate this dependency graph.
       svc-selkies -> legacy-services
       init-services -> svc-xorg
       svc-xorg -> legacy-services
+      init-services -> svc-xsettingsd
+      svc-nginx -> svc-xsettingsd
+      svc-xorg -> svc-xsettingsd
+      svc-xsettingsd -> legacy-services
     }
     Base Images: {
-      "baseimage-selkies:debianbookworm" <- "baseimage-debian:bookworm"
+      "baseimage-selkies:debiantrixie" <- "baseimage-debian:trixie"
     }
     "webcord:latest" <- Base Images
     ```
 
 ## Versions
 
-* **12.07.25:** - Rebase to Selkies, HTTPS IS NOW REQUIRED.
+* **10.08.25:** - Rebase to Debian Trixie.
+* **12.07.25:** - Switch to Selkies base image, HTTPS IS NOW REQUIRED.
 * **03.04.25:** - Update chromium launch options to improve performance.
 * **10.02.24:** - Update Readme with new env vars and ingest proper PWA icon.
 * **06.01.24:** - Rebase to Debian Bookworm.
