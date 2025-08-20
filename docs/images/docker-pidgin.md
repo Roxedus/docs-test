@@ -471,6 +471,10 @@ To help with development, we generate this dependency graph.
       svc-selkies -> legacy-services
       init-services -> svc-xorg
       svc-xorg -> legacy-services
+      init-services -> svc-xsettingsd
+      svc-nginx -> svc-xsettingsd
+      svc-xorg -> svc-xsettingsd
+      svc-xsettingsd -> legacy-services
     }
     Base Images: {
       "baseimage-selkies:alpine322" <- "baseimage-alpine:3.22"
