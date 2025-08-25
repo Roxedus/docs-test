@@ -101,4 +101,5 @@ jobs:
       - name: Generate images-by-category.md
         run: python scripts/generate-images-by-category.py
       - name: Deploy to GitHub Pages
-        run: mkdocs build 
+        run: mkdocs build
+
