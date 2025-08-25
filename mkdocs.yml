@@ -2,7 +2,7 @@ site_name: LinuxServer.io
 #site_url: https://docs.linuxserver.io
 site_author: LinuxServer.io
 site_description: Welcome to the home of the LinuxServer.io documentation!
-repo_name: linuxserver/docker-documentation
+#repo_name: linuxserver/docker-documentation
 repo_url: https://github.com/linuxserver/docker-documentation
 copyright: Copyright &copy; 2025 LinuxServer.io
 theme:
